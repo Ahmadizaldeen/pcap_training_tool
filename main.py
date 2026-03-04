@@ -125,5 +125,4 @@ def main():
         print("Fortschritt gespeichert ✅")
 
 if __name__=="__main__":
-    print("weiter in meine Projekt in dropbox kopiert am 04.03.2026")
     main()
