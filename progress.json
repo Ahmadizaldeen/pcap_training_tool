@@ -1,0 +1,191 @@
+{
+    "math": {
+        "attempts": 16,
+        "correct": 14,
+        "wrong": 2,
+        "last_10": [
+            {
+                "question": "floor(15.72)",
+                "user": 15.0,
+                "correct": 15,
+                "result": true
+            },
+            {
+                "question": "floor(8.60)",
+                "user": 8.0,
+                "correct": 8,
+                "result": true
+            },
+            {
+                "question": "ceil(14.35)",
+                "user": 15.0,
+                "correct": 15,
+                "result": true
+            },
+            {
+                "question": "sqrt(1.32)",
+                "user": 1.0,
+                "correct": 1.15,
+                "result": false
+            },
+            {
+                "question": "floor(10.13)",
+                "user": 10.0,
+                "correct": 10,
+                "result": true
+            },
+            {
+                "question": "Funktion: hypotenuse",
+                "user": 7.07,
+                "correct": 7.07,
+                "result": true
+            },
+            {
+                "question": "ceil(3.19)",
+                "user": 4.0,
+                "correct": 4,
+                "result": true
+            },
+            {
+                "question": "floor(12.74)",
+                "user": 12.0,
+                "correct": 12,
+                "result": true
+            },
+            {
+                "question": "Funktion: factorial",
+                "user": 2.0,
+                "correct": 2,
+                "result": true
+            },
+            {
+                "question": "ceil(13.78)",
+                "user": 14.0,
+                "correct": 14,
+                "result": true
+            }
+        ]
+    },
+    "platform": {
+        "attempts": 11,
+        "correct": 9,
+        "wrong": 2,
+        "last_10": [
+            {
+                "question": "Output: Windows",
+                "user": "system",
+                "correct": "system",
+                "result": true
+            },
+            {
+                "question": "Output: AMD64",
+                "user": "machine",
+                "correct": "machine",
+                "result": true
+            },
+            {
+                "question": "Output: uname_result(system='Windows', node='Ahmad_Laptop', release='11', version='10.0.26200', machine='AMD64')",
+                "user": "machine",
+                "correct": "uname",
+                "result": false
+            },
+            {
+                "question": "Output: ('64bit', 'WindowsPE')",
+                "user": "platform",
+                "correct": "architecture",
+                "result": false
+            },
+            {
+                "question": "Output: Ahmad_Laptop",
+                "user": "node",
+                "correct": "node",
+                "result": true
+            },
+            {
+                "question": "Output: 10.0.26200",
+                "user": "version",
+                "correct": "version",
+                "result": true
+            },
+            {
+                "question": "Output: ('64bit', 'WindowsPE')",
+                "user": "architecture",
+                "correct": "architecture",
+                "result": true
+            },
+            {
+                "question": "Output: 10.0.26200",
+                "user": "version",
+                "correct": "version",
+                "result": true
+            },
+            {
+                "question": "Output: ('3', '13', '6')",
+                "user": "python_version_tuple",
+                "correct": "python_version_tuple",
+                "result": true
+            },
+            {
+                "question": "Output: Intel64 Family 6 Model 186 Stepping 3, GenuineIntel",
+                "user": "processor",
+                "correct": "processor",
+                "result": true
+            }
+        ]
+    },
+    "random": {
+        "attempts": 8,
+        "correct": 6,
+        "wrong": 2,
+        "last_10": [
+            {
+                "question": "\ndescription: Wählt ein zufälliges Element aus einer Liste",
+                "user": "choice()",
+                "correct": "choice()",
+                "result": true
+            },
+            {
+                "question": "\ndescription: Gibt eine Zufallszahl zwischen 0.0 und 1.0 zurück",
+                "user": "random()",
+                "correct": "random()",
+                "result": true
+            },
+            {
+                "question": "\ndescription: Wählt ein zufälliges Element aus einer Liste",
+                "user": "choice()",
+                "correct": "choice()",
+                "result": true
+            },
+            {
+                "question": "\ndescription: Mischt die Liste in-place",
+                "user": "shuffle()",
+                "correct": "shuffle()",
+                "result": true
+            },
+            {
+                "question": "\ndescription: Initialisiert den Zufallsgenerator für reproduzierbare Ergebnisse",
+                "user": "seed()",
+                "correct": "seed()",
+                "result": true
+            },
+            {
+                "question": "\ndescription: Wählt k eindeutige Elemente aus einer Liste",
+                "user": "sample()",
+                "correct": "sample()",
+                "result": true
+            },
+            {
+                "question": "description: Gibt eine Zufallszahl zwischen 0.0 und 1.0 zurück",
+                "user": "shuffle()",
+                "correct": "random()",
+                "result": false
+            },
+            {
+                "question": "description: Float-Zufall zwischen min_val und max_val",
+                "user": "shuffle()",
+                "correct": "uniform()",
+                "result": false
+            }
+        ]
+    }
+}
