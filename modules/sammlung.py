@@ -53,3 +53,140 @@ data = [[x for x in range(y)] for y in range(3)]
 print(data)
 from random import randint
 print(randint(1, 3), end='')
+
+print("[Question 18] Which of the following expressions evaluate to True?")
+
+print((ord("0") - ord("9")), "== 10")
+print(ord("0") , ord("9"))
+print(len("''") == 2)
+print(chr(ord('z') - 1) == 'y')
+print("len(''1234'') == 4")
+
+
+import keyword
+print(keyword.kwlist)
+
+# Stack mit Liste
+stack = []
+
+# Push (Element hinzufügen)
+stack.append(1)
+stack.append(2)
+stack.append(3)
+
+print("Stack nach Push:", stack)
+
+# Pop (Element entfernen, oben zuerst)
+top = stack.pop() #Letztes Element, das reinkommt (3), wird als erstes entfernt → LIFO ✅
+print("Pop Element:", top)
+print("Stack danach:", stack)
+
+# Queue mit Liste
+queue = []
+
+# Enqueue (Element hinzufügen)
+queue.append(1)
+queue.append(2)
+queue.append(3)
+
+print("Queue nach Enqueue:", queue)
+
+# Dequeue (Element entfernen, vorne zuerst)
+front = queue.pop(0) #Erstes Element, das reinkommt (1), wird als erstes entfernt → FIFO ✅
+print("Dequeue Element:", front)
+print("Queue danach:", queue)
+# Stack = append + pop() → LIFO
+#
+# Queue = append + pop(0) → FIFO (alternativ collections.deque für effizientere Queue)
+
+x = 1 / 2 + 3 // 3 + 4 ** 2
+
+print(x)
+
+
+x = 16
+
+while x > 0:
+    print('*')
+    print(x)
+    x //= 2 #x //= 2 → x = x // 2 (Ganzzahl-Division)
+print(x)
+
+
+def increment(c, num):
+    c.count += 1
+    num += 1
+
+class Counter:
+    def __init__(self):
+        self.count = 0
+
+counter = Counter()
+number = 0
+
+for i in range(0, 100):
+    increment(counter, number)
+print(
+    "counter is "
+    + str(counter.count)
+    + ", number of times is "
+    + str(number)
+)
+
+from abc import ABC, abstractmethod
+
+class Shape(ABC):
+    @abstractmethod
+    def area(self):
+        pass  # Muss von jeder Subklasse implementiert werden
+
+class Circle(Shape):
+    def __init__(self, r):
+        self.radius = r
+
+    def area(self):
+        return 3.14 * self.radius ** 2
+
+# Shape()  # ❌ Error, kann nicht direkt instanziiert werden
+c = Circle(5)  # ✅ funktioniert
+print(c.area())
+
+from abc import ABC, abstractmethod
+
+# =========================
+# Abstract Class
+# =========================
+class Vehicle(ABC):
+    @abstractmethod
+    def start_engine(self):
+        pass  # Muss von Subklasse implementiert werden
+
+    def info(self):
+        print("Dies ist ein Fahrzeug.")  # konkrete Methode möglich
+
+# =========================
+# Subklasse
+# =========================
+class Car(Vehicle):
+    def start_engine(self):
+        print("Auto-Motor gestartet!")
+
+# =========================
+# Test
+# =========================
+# vehicle = Vehicle()  # ❌ Error: kann nicht direkt instanziiert werden
+my_car = Car()         # ✅ Subklasse kann instanziert werden
+my_car.info()          # ruft konkrete Methode aus Abstract Class
+my_car.start_engine()  # ruft implementierte abstrakte Methode
+# Was passiert hier für PCAP
+#
+# Vehicle ist Abstract Class → kann nicht direkt instanziiert werden
+#
+# Car implementiert die abstrakte Methode start_engine → Instanziierung möglich
+#
+# Vehicle kann konkrete Methoden wie info() enthalten → Subklasse erbt sie
+
+z = 2
+y = 1
+x = y < z or z > y and y > z or z < y
+print(x)
