@@ -1,33 +1,9 @@
 {
     "math": {
-        "attempts": 16,
-        "correct": 14,
-        "wrong": 2,
+        "attempts": 20,
+        "correct": 15,
+        "wrong": 5,
         "last_10": [
-            {
-                "question": "floor(15.72)",
-                "user": 15.0,
-                "correct": 15,
-                "result": true
-            },
-            {
-                "question": "floor(8.60)",
-                "user": 8.0,
-                "correct": 8,
-                "result": true
-            },
-            {
-                "question": "ceil(14.35)",
-                "user": 15.0,
-                "correct": 15,
-                "result": true
-            },
-            {
-                "question": "sqrt(1.32)",
-                "user": 1.0,
-                "correct": 1.15,
-                "result": false
-            },
             {
                 "question": "floor(10.13)",
                 "user": 10.0,
@@ -60,6 +36,30 @@
             },
             {
                 "question": "ceil(13.78)",
+                "user": 14.0,
+                "correct": 14,
+                "result": true
+            },
+            {
+                "question": "trunc(12.00)",
+                "user": 12.0,
+                "correct": 11,
+                "result": false
+            },
+            {
+                "question": "Funktion: factorial",
+                "user": 1.0,
+                "correct": 362880,
+                "result": false
+            },
+            {
+                "question": "sqrt(3.13)",
+                "user": 1.6,
+                "correct": 1.77,
+                "result": false
+            },
+            {
+                "question": "trunc(14.79)",
                 "user": 14.0,
                 "correct": 14,
                 "result": true

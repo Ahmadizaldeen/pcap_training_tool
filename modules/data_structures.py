@@ -90,3 +90,45 @@ if __name__ == "__main__":
 
     myst = {}
     print(type(myst))
+
+    foo=(1,2,3)
+    #foo.index(0)
+    #print(foo.index(0))
+
+
+def func(items=[]):
+        items.append(1)
+        return items
+
+
+print(func())
+print(func())
+print(func())
+
+x = 5
+
+def func(x=5):
+    x += 1
+
+func()
+import this
+print(this)
+print(type(this))
+print(dir(this))
+# import dis
+# def foo():
+#     x=5
+#     print(x)
+#     return x
+# dis.dis(foo)
+# print(id(foo))
+import math
+def area():
+
+    mypi = math.floor( math.pi)
+    my_pi = f"{math.pi:>02}"
+
+    return mypi, my_pi
+
+print(area())
+
