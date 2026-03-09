@@ -190,3 +190,10 @@ z = 2
 y = 1
 x = y < z or z > y and y > z or z < y
 print(x)
+
+from faker import Faker
+
+fake = Faker()
+print(fake.name())
+print(fake.email())
+print(fake.text())
