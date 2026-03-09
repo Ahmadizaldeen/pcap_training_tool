@@ -187,5 +187,18 @@
                 "result": false
             }
         ]
+    },
+    "string": {
+        "attempts": 1,
+        "correct": 0,
+        "wrong": 1,
+        "last_10": [
+            {
+                "question": "frage nicht vorhanden",
+                "user": 3,
+                "correct": "Risk Likely Understand Become. Herself Economic End Lot Detail.",
+                "result": false
+            }
+        ]
     }
 }
