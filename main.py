@@ -6,9 +6,9 @@ from modules.math_utils import run_math
 from modules.platform_utils import run_platform
 from modules.cli_utils import run_statistics
 from modules.random_utils import run_random
-
+from modules.string_utils import run_string
 from modules import (
-    string_utils, io_utils, exceptions_utils, oop_examples, lambda_closures,
+    io_utils, exceptions_utils, oop_examples, lambda_closures,
     data_structures, file_utils, decorators_oop
 )
 
@@ -108,12 +108,12 @@ def main():
     progress = ProgressManager(PROGRESS_FILE)
     while True:
         print("\n=== PCAP Trainings-Tool ===")
-        print("1.Math 2.Plattform 3.Random 4.Exceptions 5.OOP 6.Lambda 7.DataStruct 8.FileUtils 9.Decorators 10.Fortschritt 0.Exit")
+        print("1.Math 2.Plattform 3.Random 4.Stirng 5.OOP 6.Lambda 7.DataStruct 8.FileUtils 9.Decorators 10.Fortschritt 0.Exit")
         choice = input("Wähle: ")
         if choice=="1": run_math(progress)#  math_quiz(progress)
         elif choice=="2": run_platform(progress)
         elif choice=="3": run_random(progress)
-        elif choice=="4": exceptions_quiz(progress)
+        elif choice=="4": run_string(progress)
         elif choice=="5": oop_quiz(progress)
         elif choice=="6": lambda_closure_quiz(progress)
         elif choice=="7": data_structures_quiz(progress)
