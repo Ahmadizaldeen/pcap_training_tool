@@ -185,3 +185,28 @@ def random_quiz():
 
     return question_text
 
+
+class StringMethods:
+    @staticmethod
+    def find_substring(s, sub):
+        return s.find(sub)
+
+    # map, filter, text analyzer
+    @staticmethod
+    def is_upper_case(s):
+        return s.isupper()
+    @staticmethod
+    def join_words( words, sep=" "):
+        return sep.join(words)
+    @staticmethod
+    def split_string(s, sep=None):
+        return s.split(sep)
+    @staticmethod
+    def doppelte_erkennen(words):
+        duplicates=set([w for w in words if words.count(w)>1])
+        return f"Doppelte Wörter:",duplicates if duplicates else"Keine"
+    @staticmethod
+    def len_str(sting):
+        word_lengths= {w:len(w)for w in sting}
+        print("Länge:",word_lengths)
+
