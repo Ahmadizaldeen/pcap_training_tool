@@ -53,4 +53,5 @@ def debug(func):
     return wrapper
 
 if __name__ == "__main__":
+
     print(f"{BLUE}int {GREEN}str {YELLOW}dict {RED}list {CYAN}list {MAGENTA}float{ENDC}")
