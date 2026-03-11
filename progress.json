@@ -1,15 +1,9 @@
 {
     "math": {
-        "attempts": 20,
-        "correct": 15,
+        "attempts": 21,
+        "correct": 16,
         "wrong": 5,
         "last_10": [
-            {
-                "question": "floor(10.13)",
-                "user": 10.0,
-                "correct": 10,
-                "result": true
-            },
             {
                 "question": "Funktion: hypotenuse",
                 "user": 7.07,
@@ -62,6 +56,12 @@
                 "question": "trunc(14.79)",
                 "user": 14.0,
                 "correct": 14,
+                "result": true
+            },
+            {
+                "question": "Funktion: factorial",
+                "user": 1.0,
+                "correct": 1,
                 "result": true
             }
         ]
