@@ -38,3 +38,25 @@ class B:
 
 class C(A,B):
     pass
+
+# -------------------------------
+# Dekorator für Eingabevalidierung
+# -------------------------------
+import re
+from functools import wraps
+
+
+def validate_user_input(func):
+    @wraps(func)
+    def wrapper(*args, **kwargs):
+        user_info = func(*args, **kwargs)
+
+        # Validierung
+        if not user_info["username"]:
+            raise ValueError("Username darf nicht leer sein")
+        if not re.match(r"[^@]+@[^@]+\.[^@]+", user_info["email"]):
+            raise ValueError("Ungültige E-Mail")
+        if len(user_info["password"]) < 4:
+            raise ValueError("Passwort zu kurz")
+        return user_info
+    return wrapper
