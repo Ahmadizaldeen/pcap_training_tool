@@ -6,8 +6,6 @@ CYAN = '\033[96m'
 MAGENTA = '\033[95m'
 ENDC = '\033[0m'
 
-print(f"{BLUE}int {GREEN}str {YELLOW}dict {RED}list {CYAN}list {MAGENTA}float{ENDC}")
-
 def colorize(value):
 
     if isinstance(value, int):
@@ -53,3 +51,6 @@ def debug(func):
         return result
 
     return wrapper
+
+if __name__ == "__main__":
+    print(f"{BLUE}int {GREEN}str {YELLOW}dict {RED}list {CYAN}list {MAGENTA}float{ENDC}")
