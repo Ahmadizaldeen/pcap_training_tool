@@ -125,4 +125,6 @@ def main():
         print("Fortschritt gespeichert ✅")
 
 if __name__=="__main__":
+    print("Willkommen zum PCAP Trainings-Tool!")
+    print("in new Modules")
     main()
