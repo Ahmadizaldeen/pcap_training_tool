@@ -1,3 +1,4 @@
+from decorators_dome import type_color_decorator
 class Storage:
 
     class_att = []
@@ -86,3 +87,6 @@ print(auto.get_price())
 print(auto.product)
 #print(auto.get_name(1))
 print(auto.get_name(int(1)))
+
+print(not 'xyz' in 'abc' )
+
