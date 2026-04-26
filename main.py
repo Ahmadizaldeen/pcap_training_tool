@@ -11,6 +11,8 @@ from modules import (
     io_utils, exceptions_utils, oop_examples, lambda_closures,
     data_structures, file_utils, decorators_oop
 )
+from modules.generator import run_generator
+from modules.filter import run_filter
 
 
 def migrate_progress(progress):
@@ -108,18 +110,20 @@ def main():
     progress = ProgressManager(PROGRESS_FILE)
     while True:
         print("\n=== PCAP Trainings-Tool ===")
-        print("1.Math 2.Plattform 3.Random 4.Stirng 5.OOP 6.Lambda 7.DataStruct 8.FileUtils 9.Decorators 10.Fortschritt 0.Exit")
+        print("1.Math 2.Plattform 3.Random 4.Stirng 5.generator 6.filter 7.DataStruct 8.FileUtils 9.Decorators 10.Fortschritt 0.Exit")
         choice = input("Wähle: ")
         if choice=="1": run_math(progress)#  math_quiz(progress)
         elif choice=="2": run_platform(progress)
         elif choice=="3": run_random(progress)
         elif choice=="4": run_string(progress)
-        elif choice=="5": oop_quiz(progress)
-        elif choice=="6": lambda_closure_quiz(progress)
-        elif choice=="7": data_structures_quiz(progress)
-        elif choice=="8": file_utils_quiz(progress)
-        elif choice=="9": decorators_oop_quiz(progress)
-        elif choice=="10":run_statistics(progress)
+        elif choice=="5": run_generator(progress)
+        elif choice=="6": run_filter(progress)
+        elif choice=="7": oop_quiz(progress)
+        elif choice=="8": lambda_closure_quiz(progress)
+        elif choice=="9": data_structures_quiz(progress)
+        elif choice=="10": file_utils_quiz(progress)
+        elif choice=="11": decorators_oop_quiz(progress)
+        elif choice=="12":run_statistics(progress)
         elif choice=="0": break
         progress.save_progress()
         print("Fortschritt gespeichert ✅")
